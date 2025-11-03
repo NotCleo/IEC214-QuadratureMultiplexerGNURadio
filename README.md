@@ -2,6 +2,12 @@
 
 
 To run GNU radio on my Ubuntu I had to run the .ova on VBox taken https://wiki.gnuradio.org/index.php/UbuntuVM
+lsmod | grep kvm
+
+sudo modprobe -r kvm_amd
+sudo modprobe -r kvm
+
+
 Overview
 
 The Quadrature Carrier Multiplexing Transceiver project demonstrates the implementation of a QAM/QCM-based communication system designed to efficiently transmit multiple message signals over a single channel. By using quadrature carriers, the system achieves bandwidth conservation while maintaining signal integrity. The project utilizes GNU Radio for signal processing and Python for scripting and visualization, providing a practical exploration of digital communication principles.
